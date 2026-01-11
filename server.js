@@ -1,10 +1,12 @@
 // express web server
 const express = require('express');
+// const connectDB = require('./db/connection');
 const app = express();
 
-const port = 3000
+// connectDB();
+
+const port = process.env.PORT || 3000;
 
 app.use('/', require('./routes'));
  
-app.listen(process.env.PORT || port);
-console.log('Web Server is listening at port ' + (process.env.PORT || port));
+app.listen(port, () => {console.log(`Running on port ${port}`)});

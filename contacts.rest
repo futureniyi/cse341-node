@@ -1,0 +1,9 @@
+@baseUrl = http://localhost:3000
+
+### Get all contacts
+GET {{baseUrl}}/contacts
+Accept: application/json
+
+### Get single contact by id
+GET {{baseUrl}}/contacts/6964f5561b9c27c6cfa150c0
+Accept: application/json

@@ -1,12 +1,12 @@
 const swaggerAutogen = require('swagger-autogen')();
-const port = process.env.PORT || 3000;
-const host = process.env.SWAGGER_HOST || `localhost:${port}`;
-const scheme = process.env.SWAGGER_SCHEME || 'http';
 
 const doc = {
-  info: { title: 'Contacts API', description: 'API documentation' },
-  host,
-  schemes: [scheme],
+  info: {
+    title: 'Contacts API',
+    description: 'Contacts API documentation'
+  },
+  host: 'localhost:3000',
+  schemes: ['http','https']
 };
 
 const outputFile = './swagger.json';

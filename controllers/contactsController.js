@@ -1,4 +1,3 @@
-const e = require('express');
 const mongodb = require('../data/database');
 const ObjectId = require('mongodb').ObjectId;
 
@@ -28,7 +27,7 @@ const createContact = async (req, res) => {
         lastName: req.body.lastName,
         email: req.body.email,
         favoriteColor: req.body.favoriteColor,
-        birthday: req.body.birthday
+        birthday: new Date(req.body.birthday)
     };
 
     const response = await mongodb
@@ -51,7 +50,7 @@ const updateContact = async (req, res) => {
         lastName: req.body.lastName,
         email: req.body.email,
         favoriteColor: req.body.favoriteColor,
-        birthday: req.body.birthday
+        birthday: new Date(req.body.birthday)
     };
 
     const response = await mongodb

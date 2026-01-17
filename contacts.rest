@@ -13,11 +13,11 @@ POST {{baseUrl}}/contacts
 Content-Type: application/json
 
 {
-    "firstName": "John",
-    "lastName": "Doe",
-    "email": "john.doe@example.com",
-    "favoriteColor": "Burgundy",
-    "birthday": "1990-01-01T00:00:00.000Z"
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "favoriteColor": "Burgundy",
+  "birthday": "1990-01-01"
 }
 
 ### Update an existing contact
@@ -25,11 +25,11 @@ PUT {{baseUrl}}/contacts/696ad2d2a8721a4c3719583b
 Content-Type: application/json
 
 {
-    "firstName": "Jane",
-    "lastName": "Doe",
-    "email": "jane.doe@example.com",
-    "favoriteColor": "Violet",
-    "birthday": "1993-03-20T00:00:00.000Z"     
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "email": "jane.doe@example.com",
+  "favoriteColor": "Violet",
+  "birthday": "1993-06-20"
 }
 
 ### Delete a contact

@@ -7,3 +7,30 @@ Accept: application/json
 ### Get single contact by id
 GET {{baseUrl}}/contacts/6964f5561b9c27c6cfa150c0
 Accept: application/json
+
+### Create a new contact
+POST {{baseUrl}}/contacts
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "favoriteColor": "Burgundy",
+    "birthday": "1990-01-01T00:00:00.000Z"
+}
+
+### Update an existing contact
+PUT {{baseUrl}}/contacts/696ad2d2a8721a4c3719583b
+Content-Type: application/json
+
+{
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "jane.doe@example.com",
+    "favoriteColor": "Violet",
+    "birthday": "1993-03-20T00:00:00.000Z"     
+}
+
+### Delete a contact
+DELETE {{baseUrl}}/contacts/696ad2d2a8721a4c3719583b
